@@ -44,14 +44,14 @@ module.exports = {
     new CleanWebpackPlugin([outputDirectory]),
     new HtmlWebpackPlugin({
       template: './public/index.html',
-      favicon: './public/favicon.ico',
+      favicon: './public/images/favicon.png',
       publicPath: '/'
     }),
     new CopyWebpackPlugin({
       patterns:[
         {
           from: path.resolve(__dirname, 'public'), 
-          to: path.resolve(__dirname, 'dist/assets')
+          to: path.resolve(__dirname, 'dist/')
         }
       ]
     }),

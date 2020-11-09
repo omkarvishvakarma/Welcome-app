@@ -9,6 +9,7 @@ import './app.css';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Header from './pages/Header';
 
 export default class App extends Component {
 
@@ -16,11 +17,7 @@ export default class App extends Component {
     // const { username } = this.state;
     return (
       <main>
-        <div>
-          <Link to="/">Home </Link>
-          {/* <Link to="/about">About Us </Link>
-          <Link to="/contactus">Shop Now </Link> */}
-        </div>
+        <Header />
         <Switch>
           <Route path="/" component={Home} exact />
           <Route path="/about" component={About} />
